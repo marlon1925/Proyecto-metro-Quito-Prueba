@@ -53,7 +53,7 @@ const Formulario = ({ setEstado, idMetro }) => {
             }, 1000);
             return;
         }
-
+//cometarios
         try {
             if (form.id) {
                 const url = `https://64d01a7dffcda80aff526884.mockapi.io/metro/${form.id}`;
