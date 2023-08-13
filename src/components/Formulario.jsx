@@ -100,9 +100,9 @@ const Formulario = ({ setEstado, idMetro }) => {
                     value={form.nombre}
                     onChange={handleChange}
                 />
-                {errors.nombre?.type === 'required' && <small>El campo no puede estar vacio</small>}
-                {errors.nombre?.type === 'maxLength' && <small>El máximo de caracteres es 5</small>}
-                {errors.nombre?.type === 'pattern' && <small>Solo se permiten letras</small>}
+                {errors.maquinista?.type === 'required' && <small style={{ color: 'red' }}>El campo no puede estar vacio</small>}
+                {errors.maquinista?.type === 'maxLength' && <small style={{ color: 'red' }}>El máximo de caracteres es 10</small>}
+                {errors.maquinista?.type === 'pattern' && <small style={{ color: 'red' }}>Solo se permiten letras</small>}
             </div>
 
             <div>
@@ -118,9 +118,9 @@ const Formulario = ({ setEstado, idMetro }) => {
                     value={form.sector}
                     onChange={handleChange}
                 />
-                {errors.sector?.type === 'required' && <small>El campo no puede estar vacio</small>}
-                {errors.sector?.type === 'maxLength' && <small>El máximo de caracteres es 10</small>}
-                {errors.sector?.type === 'pattern' && <small>Solo se permiten letras</small>}
+                {errors.maquinista?.type === 'required' && <small style={{ color: 'red' }}>El campo no puede estar vacio</small>}
+                {errors.maquinista?.type === 'maxLength' && <small style={{ color: 'red' }}>El máximo de caracteres es 10</small>}
+                {errors.maquinista?.type === 'pattern' && <small style={{ color: 'red' }}>Solo se permiten letras</small>}
             </div>
 
             <div>
@@ -136,9 +136,9 @@ const Formulario = ({ setEstado, idMetro }) => {
                     value={form.salida}
                     onChange={handleChange}
                 />
-                {errors.salida?.type === 'required' && <small>El campo no puede estar vacio</small>}
-                {errors.salida?.type === 'maxLength' && <small>El máximo de caracteres es 10</small>}
-                {errors.salida?.type === 'pattern' && <small>Solo se permiten letras</small>}
+                {errors.maquinista?.type === 'required' && <small style={{ color: 'red' }}>El campo no puede estar vacio</small>}
+                {errors.maquinista?.type === 'maxLength' && <small style={{ color: 'red' }}>El máximo de caracteres es 10</small>}
+                {errors.maquinista?.type === 'pattern' && <small style={{ color: 'red' }}>Solo se permiten letras</small>}
             </div>
 
             <div>
@@ -154,10 +154,11 @@ const Formulario = ({ setEstado, idMetro }) => {
                     value={form.llegada}
                     onChange={handleChange}
                 />
-                {errors.llegada?.type === 'required' && <small>El campo no puede estar vacio</small>}
-                {errors.llegada?.type === 'maxLength' && <small>El máximo de caracteres es 10</small>}
-                {errors.llegada?.type === 'pattern' && <small>Solo se permiten letras</small>}
+                {errors.maquinista?.type === 'required' && <small style={{ color: 'red' }}>El campo no puede estar vacio</small>}
+                {errors.maquinista?.type === 'maxLength' && <small style={{ color: 'red' }}>El máximo de caracteres es 10</small>}
+                {errors.maquinista?.type === 'pattern' && <small style={{ color: 'red' }}>Solo se permiten letras</small>}
             </div>
+
 
             <div>
                 <label className='text-gray-700 uppercase font-bold text-sm'>NOMBRE DEL MAQUINISTA: </label>
@@ -172,10 +173,11 @@ const Formulario = ({ setEstado, idMetro }) => {
                     value={form.maquinista}
                     onChange={handleChange}
                 />
-                {errors.maquinista?.type === 'required' && <small>El campo no puede estar vacio</small>}
-                {errors.maquinista?.type === 'maxLength' && <small>El máximo de caracteres es 10</small>}
-                {errors.maquinista?.type === 'pattern' && <small>Solo se permiten letras</small>}
+                {errors.maquinista?.type === 'required' && <small style={{ color: 'red' }}>El campo no puede estar vacio</small>}
+                {errors.maquinista?.type === 'maxLength' && <small style={{ color: 'red' }}>El máximo de caracteres es 10</small>}
+                {errors.maquinista?.type === 'pattern' && <small style={{ color: 'red' }}>Solo se permiten letras</small>}
             </div>
+
 
             <div>
                 <label className='text-gray-700 uppercase font-bold text-sm'>DETALLES: </label>
@@ -190,14 +192,12 @@ const Formulario = ({ setEstado, idMetro }) => {
                     value={form.detalles}
                     onChange={handleChange}
                 />
-                {errors.detalles?.type === 'required' && <small>El campo no puede estar vacio</small>}
-                {errors.detalles?.type === 'maxLength' && <small>El máximo de caracteres es 10</small>}
-                {errors.detalles?.type === 'pattern' && <small>Solo se permiten letras</small>}
+                {errors.maquinista?.type === 'required' && <small style={{ color: 'red' }}>El campo no puede estar vacio</small>}
+                {errors.maquinista?.type === 'maxLength' && <small style={{ color: 'red' }}>El máximo de caracteres es 10</small>}
+                {errors.maquinista?.type === 'pattern' && <small style={{ color: 'red' }}>Solo se permiten letras</small>}
             </div>
 
             <input
-
-                /* vdfvfd */
                 type="submit"
                 className='bg-sky-900 w-full p-3 
                 text-white uppercase font-bold rounded-lg 
