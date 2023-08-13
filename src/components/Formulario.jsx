@@ -77,6 +77,14 @@ const Formulario = ({ setEstado, idMetro }) => {
                     setForm({});
                 }, 1000);
             }
+            setForm({
+                nombre: "",
+                sector: "",
+                salida: "",
+                llegada: "",
+                maquinista: "",
+                detalles: ""
+            });
         } catch (error) {
             console.log(error);
         }
@@ -100,9 +108,9 @@ const Formulario = ({ setEstado, idMetro }) => {
                     value={form.nombre}
                     onChange={handleChange}
                 />
-                {errors.maquinista?.type === 'required' && <small style={{ color: 'red' }}>El campo no puede estar vacio</small>}
-                {errors.maquinista?.type === 'maxLength' && <small style={{ color: 'red' }}>El máximo de caracteres es 10</small>}
-                {errors.maquinista?.type === 'pattern' && <small style={{ color: 'red' }}>Solo se permiten letras</small>}
+                {errors.nombre?.type === 'required' && <small style={{ color: 'red' }}>El campo no puede estar vacio</small>}
+                {errors.nombre?.type === 'maxLength' && <small style={{ color: 'red' }}>El máximo de caracteres es 10</small>}
+                {errors.nombre?.type === 'pattern' && <small style={{ color: 'red' }}>Solo se permiten letras</small>}
             </div>
 
             <div>
