@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "metro": [
+    {
+      "nombre": "Quitumbe SUR",
+      "sector": "Sur-norte",
+      "salida": "Quitumbe",
+      "llegada": "Carolina",
+      "maquinista": "Monserratt",
+      "detalles": "nn",
+      "id": "aaab703b-6af6-4853-bf05-6134be5e8710"
+    },
+    {
+      "nombre": "Quintana",
+      "sector": "Quito",
+      "salida": "Norte",
+      "llegada": "EPN",
+      "maquinista": "Jose",
+      "detalles": "cdsjdssdvsdv",
+      "id": "6976de17-c5ce-4310-a12e-bbd8ac1aff37"
+    }
+  ]
+}
